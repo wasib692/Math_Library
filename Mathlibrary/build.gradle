@@ -43,7 +43,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.appsol360.mathfinal2'
                 artifactId = 'Mathlibrary'
-                version = '1.0'
+                version = '1.1'
 
 
             }
