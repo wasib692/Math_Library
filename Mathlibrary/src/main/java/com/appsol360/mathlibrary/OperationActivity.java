@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class OperationActivity extends AppCompatActivity {
     EditText first_num, second_num;
@@ -49,6 +50,8 @@ public class OperationActivity extends AppCompatActivity {
                     divide.setText(String.valueOf(Arithmatic.Divide(Double.parseDouble(a), Double.parseDouble(b))));
                     subtract.setText(String.valueOf(Arithmatic.Subtract(Double.parseDouble(a), Double.parseDouble(b))));
                     multiply.setText(String.valueOf(Arithmatic.Multiply(Double.parseDouble(a), Double.parseDouble(b))));
+                    Toast.makeText(getBaseContext(), "sum is:  "+String.valueOf(Arithmatic.Sum(Double.parseDouble(a), Double.parseDouble(b))), Toast.LENGTH_SHORT).show();
+                    finish();
 
                 }
             }
